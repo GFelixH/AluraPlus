@@ -94,3 +94,13 @@ body {
   font-size: 0.7rem;
   color: var(--grey-secondary);
 }
+.main-fourth-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.main-fourth-container-content p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
