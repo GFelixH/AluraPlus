@@ -1,3 +1,71 @@
+:root {
+  --white-main: #ffffff;
+  --grey-secondary: #c0c0c0;
+  --blue-button: #167bf7;
+  --black-backgroud: #00030c;
+}
 body {
   font-family: "Inter", sans-serif;
+  color: var(--white-main);
+  background-color: var(--black-backgroud);
+  font-weight: 400;
+}
+.header-background {
+  width: 75vw;
+}
+.header-content {
+  height: 100vh;
+  background-image: url("./assets/Background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* flex
+.header-content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  top: 160px;
+  left: 140px;
+}
+.header-content-text h1 {
+  font-size: 1.9rem;
+} */
+/* grid*/
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.header-content-text {
+  grid-row-start: 2;
+  margin-left: 10vw;
+}
+.header-content-text h1 {
+  text-align: center;
+  margin-bottom: 9px;
+}
+.header-content-text button {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 12px 30px;
+  width: 356px;
+  margin: 9px;
+  color: var(--white-main);
+  border-radius: 10px;
+}
+.header-button-main {
+  background: var(--blue-button);
+}
+.header-button-second {
+  background: transparent;
+  border: 2px solid var(--white-main);
+}
+.header-content-text p {
+  font-size: 0.7rem;
+  color: var(--grey-secondary);
+}
+.header-content-text button:hover {
+  cursor: pointer;
 }
