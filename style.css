@@ -62,10 +62,32 @@ body {
   background: transparent;
   border: 2px solid var(--white-main);
 }
+.header-content-text h1 {
+  font-weight: 700;
+}
 .header-content-text p {
   font-size: 0.7rem;
   color: var(--grey-secondary);
 }
 .header-content-text button:hover {
   cursor: pointer;
+}
+.main-first-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.main-first-container figure {
+  margin-left: 20vw;
+}
+.main-first-container-text h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+.main-first-container-text p {
+  width: 40em;
+  font-size: 0.7rem;
+  color: var(--grey-secondary);
 }
