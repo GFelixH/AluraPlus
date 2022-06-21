@@ -19,20 +19,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
-/* flex
-.header-content-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  top: 160px;
-  left: 140px;
-}
-.header-content-text h1 {
-  font-size: 1.9rem;
-} */
-/* grid*/
 .header-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -70,33 +56,31 @@ body {
   font-size: 0.7rem;
   color: var(--grey-secondary);
 }
-.header-content-text button:hover {
+.header-content-text button:hover,
+.main-second-container-text button:hover {
   cursor: pointer;
 }
-.main-first-container {
+.section-flex-container {
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .main-first-container figure {
   margin-left: 20vw;
 }
-.main-first-container-text h2 {
+.main-first-container-text h2,
+.main-third-container-text h1 {
   font-weight: 700;
   font-size: 1.5rem;
   letter-spacing: 0.2em;
   margin-bottom: 10px;
 }
-.main-first-container-text p {
+.main-first-container-text p,
+.main-third-container-text p {
   width: 40em;
   font-size: 0.7rem;
   color: var(--grey-secondary);
-}
-.main-second-container {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
 }
 .main-second-container-text p {
   width: 30em;
@@ -104,4 +88,9 @@ body {
 }
 .main-second-container-text button {
   background: var(--blue-button);
+}
+.main-third-container-text p {
+  width: 40em;
+  font-size: 0.7rem;
+  color: var(--grey-secondary);
 }
